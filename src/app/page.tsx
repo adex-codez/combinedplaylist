@@ -3,7 +3,7 @@ import { Button } from "~/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="pt-10 h-[100vh] bg-gray-900 px-[120px]">
+    <div className="pt-10 h-[100vh] bg-[#09090b] px-[120px]">
       <nav className="flex justify-between">
         <h1 className="text-white">Logo</h1>
         <div className="flex gap-2">
@@ -16,7 +16,7 @@ export default function Home() {
         </div>
       </nav>
       <div className="flex flex-col mt-20">
-        <h1 className="text-zinc-100 text-wrap flex justify-center text-7xl text-center leading-[-0.05em] tracking-tighter">
+        <h1 className="text-gray-100 text-wrap flex justify-center text-7xl text-center leading-[-0.05em] tracking-tighter">
           <span className="w-[50%]">
             All your <span className="text-red-600">playlists</span>{" "}
             <span className="pt-4">all in one place</span>
