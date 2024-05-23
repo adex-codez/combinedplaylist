@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "~/components/ui/button";
+import FAQ from "./_components/FAQ";
 
 export default function Home() {
   return (
@@ -83,7 +84,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="px-8 md:px[80px] lg:px-[120px]  mb-60">
+      <section className="px-8 md:px-[80px] lg:px-[120px]  mb-60">
         <div className="mb-44">
           <div className="flex justify-center pb-28">
             <div className="rounded-full pt-[6px] bg-back h-[60px] w-[60px]">
@@ -93,7 +94,9 @@ export default function Home() {
           <div className="lg:flex gap-12">
             <div className="bg-gray-400 h-[60vh] rounded-xl w-full lg:w-1/2 mb-10"></div>
             <div className="lg:w-1/2 lg:flex lg:items-center">
-              <h1 className="text-5xl text-center">Sign In/Sign Up</h1>
+              <h1 className="text-4xl lg:text-5xl text-center">
+                Sign In/Sign Up
+              </h1>
             </div>
           </div>
         </div>
@@ -105,7 +108,9 @@ export default function Home() {
           </div>
           <div className="lg:flex">
             <div className="lg:w-1/2 lg:flex lg:items-center mb-10">
-              <h1 className="text-5xl text-center">Connect your accounts</h1>
+              <h1 className="text-4xl lg:text-5xl text-center">
+                Connect your accounts
+              </h1>
             </div>
             <div className="bg-gray-400 h-[60vh] rounded-xl w-full lg:w-1/2 mb-10"></div>
           </div>
@@ -119,11 +124,25 @@ export default function Home() {
           <div className="lg:flex gap-12">
             <div className="bg-gray-400 h-[60vh] rounded-xl w-full lg:w-1/2 mb-10"></div>
             <div className="lg:w-1/2 lg:flex lg:items-center">
-              <h1 className="text-5xl text-center">View all your playlists</h1>
+              <h1 className="text-4xl lg:text-5xl text-center">
+                View all your playlists
+              </h1>
             </div>
           </div>
         </div>
       </section>
+      <section className="px-8 md:px-[80px] lg:px-[120px] mb-20">
+        <h2 className="text-center text-3xl mb-8 lg:text-4xl">F. A. Q</h2>
+        <FAQ />
+      </section>
+      <footer className="bg-back h-14 pt-4">
+        <p className="text-center text-gray-100">
+          Made with ❤ by{" "}
+          <a href="https://x.com/@AdnateCodes" className="underline">
+            AdnateCodes
+          </a>{" "}
+        </p>
+      </footer>
     </div>
   );
 }
