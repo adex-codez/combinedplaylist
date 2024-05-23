@@ -4,18 +4,18 @@ import { Button } from "~/components/ui/button";
 export default function Home() {
   return (
     <div>
-      <header className="pt-10 pb-32 flex flex-col bg-back px-8 md:px[80px] lg:px-[120px]">
+      <header className="pt-10 pb-32 mb-60 flex flex-col bg-back px-8 md:px[80px] lg:px-[120px]">
         <nav className="flex justify-between">
           <h1 className="text-white">Logo</h1>
           <div className="flex gap-2">
             <Button
-              className="bg-red-500 rounded-lg text-gray-900 py-4"
+              className="bg-red-500 rounded-lg text-base text-gray-900 py-7"
               size="lg"
             >
               Sign In
             </Button>
             <Button
-              className="bg-red-500 rounded-lg text-gray-900 py-4"
+              className="bg-red-500 rounded-lg text-base text-gray-900 py-7"
               size="lg"
             >
               Sign Out
@@ -83,11 +83,43 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="px-[120px]  pt-56">
-        <div>
-          <div className="flex justify-center pb-14">
+      <section className="px-8 md:px[80px] lg:px-[120px]  mb-60">
+        <div className="mb-44">
+          <div className="flex justify-center pb-28">
             <div className="rounded-full pt-[6px] bg-back h-[60px] w-[60px]">
               <h3 className="text-red-500 text-3xl text-center">1</h3>
+            </div>
+          </div>
+          <div className="lg:flex gap-12">
+            <div className="bg-gray-400 h-[60vh] rounded-xl w-full lg:w-1/2 mb-10"></div>
+            <div className="lg:w-1/2 lg:flex lg:items-center">
+              <h1 className="text-5xl text-center">Sign In/Sign Up</h1>
+            </div>
+          </div>
+        </div>
+        <div className="mb-44">
+          <div className="flex justify-center pb-28">
+            <div className="rounded-full pt-[6px] bg-back h-[60px] w-[60px]">
+              <h3 className="text-red-500 text-3xl text-center">2</h3>
+            </div>
+          </div>
+          <div className="lg:flex">
+            <div className="lg:w-1/2 lg:flex lg:items-center mb-10">
+              <h1 className="text-5xl text-center">Connect your accounts</h1>
+            </div>
+            <div className="bg-gray-400 h-[60vh] rounded-xl w-full lg:w-1/2 mb-10"></div>
+          </div>
+        </div>
+        <div className="">
+          <div className="flex justify-center pb-28">
+            <div className="rounded-full pt-[6px] bg-back h-[60px] w-[60px]">
+              <h3 className="text-red-500 text-3xl text-center">3</h3>
+            </div>
+          </div>
+          <div className="lg:flex gap-12">
+            <div className="bg-gray-400 h-[60vh] rounded-xl w-full lg:w-1/2 mb-10"></div>
+            <div className="lg:w-1/2 lg:flex lg:items-center">
+              <h1 className="text-5xl text-center">View all your playlists</h1>
             </div>
           </div>
         </div>
